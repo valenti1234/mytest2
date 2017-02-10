@@ -13,6 +13,27 @@
                 "element": {"#": "main"}
             }
         },
+        "button": {
+            "prototype": "montage/ui/button.reel",
+            "properties": {
+                "element": {"#": "button"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "enabled": true,
+                "formenctype": "application/x-www-form-urlencoded",
+                "formmethod": "get",
+                "label": "Button",
+                "type": "button"
+            }
+        },
+        "checkbox": {
+            "prototype": "montage/ui/checkbox.reel",
+            "properties": {
+                "element": {"#": "checkbox"},
+                "checked": true
+            }
+        },
         "text": {
             "prototype": "montage/ui/text.reel",
             "properties": {
@@ -39,6 +60,8 @@
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <h1 data-montage-id="title">
+            <input type="checkbox" data-montage-id="checkbox">
+            <button data-montage-id="button"></button>
             <p data-montage-id="text"></p>
         </h1>
     </div>

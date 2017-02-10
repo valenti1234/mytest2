@@ -88,6 +88,16 @@
                 "value": "Text"
             }
         },
+        "textField": {
+            "prototype": "montage/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "textField"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "value": "Text"
+            }
+        },
         "title": {
             "prototype": "digit/ui/title.reel",
             "properties": {
@@ -102,7 +112,11 @@
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0" data-montage-id="flow">
+            <p data-montage-id="text"></p>
+            <input data-montage-id="textField" type="text">
+            <div></div>
+        </div>
     </div>
 </body>
 </html>

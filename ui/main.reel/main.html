@@ -29,12 +29,24 @@
                 "label": "Button",
                 "type": "button"
             }
+        },
+        "list": {
+            "prototype": "digit/ui/list.reel",
+            "properties": {
+                "element": {"#": "list"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
+        <ul data-montage-id="list">
+            <li></li>
+        </ul>
         <button data-montage-id="button"></button>
     </div>
 </body>

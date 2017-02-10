@@ -30,6 +30,17 @@
                 "type": "button"
             }
         },
+        "image": {
+            "prototype": "digit/ui/image.reel",
+            "properties": {
+                "element": {"#": "image"},
+                "contenteditable": "true",
+                "crossOrigin": null,
+                "dir": "ltr",
+                "draggable": "true",
+                "src": "https://okdiario.com/bebes/img/2016/12/30/peppa-pig1.jpg"
+            }
+        },
         "list": {
             "prototype": "digit/ui/list.reel",
             "properties": {
@@ -47,6 +58,7 @@
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
+        <img data-montage-id="image">
         <ul data-montage-id="list">
             <li></li>
         </ul>

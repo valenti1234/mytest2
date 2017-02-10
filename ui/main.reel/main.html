@@ -16,7 +16,6 @@
         "button": {
             "prototype": "montage/ui/button.reel",
             "properties": {
-                "element": {"#": "button"},
                 "contenteditable": "true",
                 "dir": "ltr",
                 "draggable": "true",
@@ -30,14 +29,59 @@
         "checkbox": {
             "prototype": "montage/ui/checkbox.reel",
             "properties": {
-                "element": {"#": "checkbox"},
                 "checked": true
+            }
+        },
+        "flow": {
+            "prototype": "montage/ui/flow.reel",
+            "properties": {
+                "cameraPosition": [
+                    0,
+                    0,
+                    1500
+                ],
+                "paths": [
+                    {
+                        "knots": [
+                            {
+                                "knotPosition": [
+                                    -2400,
+                                    0,
+                                    -1
+                                ],
+                                "nextHandlerPosition": [
+                                    -800,
+                                    0,
+                                    -1
+                                ],
+                                "previousDensity": 10,
+                                "nextDensity": 10
+                            },
+                            {
+                                "knotPosition": [
+                                    2400,
+                                    0,
+                                    -1
+                                ],
+                                "previousHandlerPosition": [
+                                    800,
+                                    0,
+                                    -1
+                                ],
+                                "previousDensity": 10,
+                                "nextDensity": 10
+                            }
+                        ],
+                        "headOffset": 0,
+                        "tailOffset": 0,
+                        "units": {}
+                    }
+                ]
             }
         },
         "text": {
             "prototype": "montage/ui/text.reel",
             "properties": {
-                "element": {"#": "text"},
                 "contenteditable": "true",
                 "dir": "ltr",
                 "draggable": "true",
@@ -47,7 +91,6 @@
         "title": {
             "prototype": "digit/ui/title.reel",
             "properties": {
-                "element": {"#": "title"},
                 "contenteditable": "true",
                 "dir": "ltr",
                 "draggable": "true",
@@ -59,12 +102,7 @@
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-        <input type="checkbox" data-montage-id="checkbox">
-        <button data-montage-id="button"></button>
-        <p data-montage-id="text"></p>
-        <h1 data-montage-id="title">
 
-        </h1>
     </div>
 </body>
 </html>

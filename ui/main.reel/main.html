@@ -13,6 +13,16 @@
                 "element": {"#": "main"}
             }
         },
+        "text": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "text"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "value": "Text"
+            }
+        },
         "title": {
             "prototype": "digit/ui/title.reel",
             "properties": {
@@ -28,7 +38,9 @@
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-        <h1 data-montage-id="title"></h1>
+        <h1 data-montage-id="title">
+            <p data-montage-id="text"></p>
+        </h1>
     </div>
 </body>
 </html>
